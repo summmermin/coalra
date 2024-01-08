@@ -1,5 +1,5 @@
 //MemberItmes.js
-import './css/memberItem.css';
+import '../css/memberItem.css';
 
 const ItemsDesc = (props) => {
     return (

@@ -1,5 +1,5 @@
 //Member.js
-import './css/class.css'
+import '../css/class.css'
 
 const Member = () => {
     return (

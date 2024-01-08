@@ -1,6 +1,6 @@
 //MemberItmes.js
-import './css/memberItem.css';
-import ItemDesc from './ItemDesc';
+import '../../css/memberItem.css';
+import ItemDesc from '../../test/ItemDesc';
 import {useState} from 'react';
 
 const MemberItems = (props) => {

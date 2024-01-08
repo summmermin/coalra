@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import {Fragment} from 'react';
-import Member from './Member';
-import Picture from './Picture';
-import Mission from './Mission';
-import MemberItems from './MemberItems';
+import Member from './test/Member';
+import Picture from './test/Picture';
+import Mission from './test/Mission';
+import MemberItems from './components/listViews/MemberItems';
 
 function App() {
     const MemberDB = [
