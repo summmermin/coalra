@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Index from './test/Index';
 import reportWebVitals from './reportWebVitals';
-// 엔트리포인트 앱의 시작점
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+        {/*<Index/>*/}
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
