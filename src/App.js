@@ -1,11 +1,12 @@
+import './App.css';
+import './styles/common.css';
+import Lists from './components/listViews/Lists';
 import logo from './logo.svg';
-import {Fragment} from 'react';
-import Member from './test/Member';
-import Picture from './test/Picture';
-import Mission from './test/Mission';
-import MemberItems from './components/listViews/MemberItems';
 
 function App() {
+    const imgStyle = {
+        display: 'inline-flex'
+    };
     const MemberDB = [
         {id: 'm1', name: '김경아', thumb: 'http://qwerew.cafe24.com/images/pet-1.jpg', email: 'abc@defg.com'},
         {id: 'm2', name: '김망고', thumb: 'http://qwerew.cafe24.com/images/pet-2.jpg', email: 'efg@defg.com'},
@@ -13,16 +14,12 @@ function App() {
         {id: 'm4', name: '윤현선', thumb: 'http://qwerew.cafe24.com/images/pet-4.jpg', email: 'lmn@defg.com'},
         {id: 'm4', name: '이소정', thumb: 'http://qwerew.cafe24.com/images/pet-5.jpg', email: 'opq@defg.com'},
     ];
-    return (
-        <Fragment>
-            {/*Fragment 컴파일 이후에도 불필요한 div 요소가 생성되지 않습니다. (Fragment는 <></> 빈걸로도 작성할 수 있음.*/}
-            {
-                MemberDB.map((item, key) => {
-                    return <MemberItems name={item.name} thumb={item.thumb} email={item.email} key={key}/>;
-                })
-            }
-        </Fragment>
-    );
+    return (<>
+        <div style={imgStyle}>
+            <img src={logo} width="100" height="100" alt=""/>
+        </div>
+        <Lists db={MemberDB}/>
+    </>);
 }
 
 export default App;
